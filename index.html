@@ -19,20 +19,18 @@
         <p class="m-3">Length: <span id="result"></span></p>
         
     </div>
+    <div>
+      <h1>Scisors game:</h1>
+      <div>
+        <input type="text" id="user_obj" placeholder="insert you move like: 'Rock'">
+        <button type="button" id="play" pys-onClick="play">Play</button>
+      </div>
+      <h1 id="scisors_test"></h1>
+      <div><p id="scisors_op"></p></div>
+    </div>
   </body>
-  <py-script>
-  to_count = Element("to_count")
-
-  op = Element("result")
-
-  def Clear(*arg, **kwargs):
-    to_count.clear()
-  
-  def Counter(*arg, **kwargs):
-    op.write(len(to_count.value))
-    
-    </py-script>
+  <py-script src="./count.py"></py-script>
+  <py-script src="./scisors.py"></py-script>
 </html>
 
 <html>
-
