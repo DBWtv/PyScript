@@ -9,7 +9,7 @@
     </head>
 
   <body>
-    <h1></h1>
+    <h1 id="test_output"></h1>
     <div class="input-group m-3">
         <input class="" id="to_count" name="to_count">
         <button type="button" id="clear" pys-onClick="Clear">Clear</button>
@@ -20,13 +20,12 @@
         
     </div>
     <div>
-      <h1>Scisors game:</h1>
-      <div>
+      <h1 class="m-3">Scisors game:</h1>
+      <div class="input-group m-3">
         <input type="text" id="user_obj" placeholder="insert you move like: 'Rock'">
         <button type="button" id="play" pys-onClick="play">Play</button>
       </div>
-      <h1 id="scisors_test"></h1>
-      <div><p id="scisors_op"></p></div>
+      <div class="m-3"><h3 id="scisors_op"></h3></div>
     </div>
   </body>
   <py-script src="./count.py"></py-script>
