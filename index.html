@@ -5,6 +5,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <script src="main.js"></script>
 
     </head>
 
@@ -20,13 +21,27 @@
         
     </div>
     <div>
-      <h1 class="m-3">Scisors game:</h1>
+      <h1 class="m-3 p-0"><span id="scisors_low"></span> Scisors game</h1>
       <div class="input-group m-3">
         <input type="text" id="user_obj" placeholder="insert you move like: 'Rock'">
         <button type="button" id="play" pys-onClick="play">Play</button>
       </div>
       <div class="m-3"><h3 id="scisors_op"></h3></div>
     </div>
+    <table class="table w-50 table-bordered m-3">
+      <thead>
+      <tr class="table-primary">
+        <th scope="col">You</th>
+        <th class="w-50" scope="col">Computer</th>
+      </tr>
+    </thead>
+    <tbody id="tablescore">
+      <tr>
+        <th class="table-success" id="my_score"></th>
+        <th class="table-danger" id="pc_score"></th>
+      </tr>
+    </tbody>
+    </table>
   </body>
   <py-script src="./count.py"></py-script>
   <py-script src="./scisors.py"></py-script>
